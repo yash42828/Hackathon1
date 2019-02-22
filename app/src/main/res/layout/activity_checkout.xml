@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Checkout"
+    android:background="@drawable/gradient">
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="153dp"
+        android:layout_height="34dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="162dp"
+        android:layout_marginLeft="162dp"
+        android:layout_marginTop="135dp"
+        android:text="Total Price"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <!--<TextView-->
+        <!--android:id="@+id/weight"-->
+        <!--android:layout_width="153dp"-->
+        <!--android:layout_height="34dp"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_marginStart="162dp"-->
+        <!--android:layout_marginLeft="162dp"-->
+        <!--android:layout_marginTop="191dp"-->
+        <!--android:text="Total Weight"-->
+        <!--android:textColor="@color/white"-->
+        <!--android:textSize="20sp" />-->
+
+    <TextView
+        android:id="@+id/count"
+        android:layout_width="153dp"
+        android:layout_height="38dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="162dp"
+        android:layout_marginLeft="162dp"
+        android:layout_marginTop="83dp"
+        android:layout_marginEnd="96dp"
+        android:layout_marginRight="96dp"
+        android:text="Total Count"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/count2"
+        android:layout_width="wrap_content"
+        android:layout_height="38dp"
+        android:layout_alignBottom="@+id/count"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="43dp"
+        android:layout_marginLeft="43dp"
+        android:layout_marginBottom="-4dp"
+        android:text="Total Count:"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/count3"
+        android:layout_width="wrap_content"
+        android:layout_height="38dp"
+        android:layout_alignBottom="@+id/price"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="43dp"
+        android:layout_marginLeft="43dp"
+        android:layout_marginBottom="-3dp"
+        android:text="Total Price:"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/by_cash"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/count2"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="-43dp"
+        android:layout_marginTop="259dp"
+        android:background="@drawable/button_style"
+        android:text="Payment By Cash"
+        android:textColor="@color/white"
+        android:onClick="onclick"/>
+
+    <Button
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/by_cash"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/button_style"
+        android:text="Payment By Debit/Credit Card"
+        android:textColor="@color/white"
+        android:onClick="onclick"/>
+
+</RelativeLayout>
